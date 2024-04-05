@@ -53,17 +53,15 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
 
 ---
 
-# Gondi audit details
-- Total Prize Pool: $74600 in USDC
-  - HM awards: $45400 in USDC
-  - (remove this line if there is no Analysis pool) Analysis awards: XXX XXX USDC (Notion: Analysis pool)
-  - QA awards: $1300 in USDC
-  - (remove this line if there is no Bot race) Bot Race awards: XXX XXX USDC (Notion: Bot Race pool)
-  - Gas awards: $1300 in USDC
-  - Judge awards: $10460 in USDC
-  - Lookout awards: XXX XXX USDC (Notion: Sum of Pre-sort fee + Pre-sort early bonus)
+# Gondi Invitational audit details
+- Total Prize Pool: $74,600 in USDC
+  - HM awards: $45,400 in USDC
+  - Analysis awards: $2,500 USDC 
+  - QA awards: $1,300 in USDC
+  - Gas awards: $1,300 in USDC
+  - Judge awards: $10,460 in USDC
   - Scout awards: $500 in USDC
-  - Mitigation Review: $13140 in USDC (*Opportunity goes to top 3 certified wardens based on placement in this audit.*)
+  - Mitigation Review: $13,140 in USDC (*Opportunity goes to top 3 certified wardens based on placement in this audit.*)
 - Join [C4 Discord](https://discord.gg/code4rena) to register
 - Submit findings [using the C4 form](https://code4rena.com/contests/2024-04-gondi/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
@@ -79,9 +77,6 @@ This audit repo and its Discord channel are accessible to **certified wardens on
 
 *All discussions regarding private audits should be considered private and confidential, unless otherwise indicated.*
 
-Please review the following confidentiality requirements carefully, and if anything is unclear, ask questions in the private audit channel in the C4 Discord.
-
->>DRAG IN CLASSIFIED IMAGE HERE
 
 ## Automated Findings / Publicly Known Issues
 
