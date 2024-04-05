@@ -10,8 +10,6 @@
 [submodule "lib/v3"]
 	path = lib/v3
 	url = https://github.com/pixeldaogg/v3
-[submodule "/Users/ericdenovitzer/pixel/florida/contracts/lib/v3"]
-	branch = sol13
 [submodule "lib/chainlink"]
 	path = lib/chainlink
 	url = https://github.com/smartcontractkit/chainlink
