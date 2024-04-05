@@ -113,6 +113,8 @@ The security of those wallets is in a separate layer (multi-sig / governor contr
 
 # Scope
 
+*See [scope.txt](https://github.com/code-423n4/2024-04-gondi/blob/main/scope.txt)*
+
 [ ✅ SCOUTS: add scoping and technical details here ]
 
 ### Files in scope
@@ -127,6 +129,10 @@ The security of those wallets is in a separate layer (multi-sig / governor contr
 | [contracts/folder/sample.sol](https://github.com/code-423n4/repo-name/blob/contracts/folder/sample.sol) | 123 | This contract does XYZ | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
 
 ### Files out of scope
+
+*See [out_of_scope.txt](https://github.com/code-423n4/2024-04-gondi/blob/main/out_of_scope.txt)*
+
+
 ✅ SCOUTS: List files/directories out of scope
 
 ## Scoping Q &amp; A
