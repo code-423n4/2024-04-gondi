@@ -2,16 +2,16 @@
 
 This `README.md` contains a set of checklists for our audit collaboration.
 
-Your audit will use two repos: 
+Your audit will use two repos:
 - **an _audit_ repo** (this one), which is used for scoping your audit and for providing information to wardens
-- **a _findings_ repo**, where issues are submitted (shared with you after the audit) 
+- **a _findings_ repo**, where issues are submitted (shared with you after the audit)
 
 Ultimately, when we launch the audit, this repo will be made public and will contain the smart contracts to be reviewed and all the information needed for audit participants. The findings repo will be made public after the audit report is published and your team has mitigated the identified issues.
 
 Some of the checklists in this doc are for **C4 (🐺)** and some of them are for **you as the audit sponsor (⭐️)**.
 
 ---
-
+ 
 # Audit setup
 
 ## 🐺 C4: Set up repos
@@ -25,7 +25,7 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
 - [ ] Add the information from the scoping form to the "Scoping Details" section at the bottom of this readme.
 - [ ] Add matching info to the Code4rena site
 - [ ] Add sponsor to this private repo with 'maintain' level access.
-- [ ] Send the sponsor contact the url for this repo to follow the instructions below and add contracts here. 
+- [ ] Send the sponsor contact the url for this repo to follow the instructions below and add contracts here.
 - [ ] Delete this checklist.
 
 # Repo setup
@@ -91,6 +91,3 @@ The 4naly3er report can be found [here](https://github.com/code-423n4/2024-04-go
 
 _Note for C4 wardens: Anything included in this `Automated Findings / Publicly Known Issues` section is considered a publicly known issue and is ineligible for awards._
 ## 🐺 C4: Begin Gist paste here (and delete this line)
-
-
-
