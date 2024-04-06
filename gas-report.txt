@@ -1,0 +1,393 @@
+| lib/delegate-registry/src/DelegateRegistry.sol:DelegateRegistry contract |                 |      |        |      |         |
+|--------------------------------------------------------------------------|-----------------|------|--------|------|---------|
+| Deployment Cost                                                          | Deployment Size |      |        |      |         |
+| 1419004                                                                  | 6348            |      |        |      |         |
+| Function Name                                                            | min             | avg  | median | max  | # calls |
+| checkDelegateForERC721                                                   | 5895            | 5895 | 5895   | 5895 | 2       |
+
+
+| lib/solmate/src/tokens/WETH.sol:WETH contract |                 |       |        |       |         |
+|-----------------------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                               | Deployment Size |       |        |       |         |
+| 752222                                        | 4106            |       |        |       |         |
+| Function Name                                 | min             | avg   | median | max   | # calls |
+| approve                                       | 25970           | 44686 | 45942  | 45942 | 30      |
+| balanceOf                                     | 582             | 1248  | 582    | 2582  | 6       |
+| deposit                                       | 51905           | 67376 | 69005  | 69005 | 21      |
+| transfer                                      | 46382           | 46382 | 46382  | 46382 | 1       |
+
+
+| src/lib/AddressManager.sol:AddressManager contract |                 |        |        |        |         |
+|----------------------------------------------------|-----------------|--------|--------|--------|---------|
+| Deployment Cost                                    | Deployment Size |        |        |        |         |
+| 442626                                             | 1787            |        |        |        |         |
+| Function Name                                      | min             | avg    | median | max    | # calls |
+| add                                                | 96650           | 104641 | 96878  | 113978 | 157     |
+| addressToIndex                                     | 534             | 534    | 534    | 534    | 3       |
+| indexToAddress                                     | 476             | 476    | 476    | 476    | 3       |
+| isWhitelisted                                      | 416             | 2378   | 2416   | 2416   | 375     |
+| owner                                              | 359             | 422    | 359    | 2359   | 95      |
+| removeFromWhitelist                                | 24920           | 24920  | 24920  | 24920  | 1       |
+
+
+| src/lib/AuctionLoanLiquidator.sol:AuctionLoanLiquidator contract |                 |        |        |        |         |
+|------------------------------------------------------------------|-----------------|--------|--------|--------|---------|
+| Deployment Cost                                                  | Deployment Size |        |        |        |         |
+| 1548401                                                          | 7023            |        |        |        |         |
+| Function Name                                                    | min             | avg    | median | max    | # calls |
+| addLoanContract                                                  | 91613           | 91625  | 91613  | 91841  | 19      |
+| getLiquidationDistributor                                        | 510             | 1510   | 1510   | 2510   | 2       |
+| getTriggerFee                                                    | 288             | 288    | 288    | 288    | 1       |
+| liquidateLoan                                                    | 33714           | 64134  | 70232  | 70232  | 16      |
+| owner                                                            | 463             | 653    | 463    | 2463   | 21      |
+| placeBid                                                         | 32915           | 70495  | 75440  | 75440  | 31      |
+| removeLoanContract                                               | 32423           | 32423  | 32423  | 32423  | 1       |
+| settleAuction                                                    | 34173           | 152590 | 163232 | 215172 | 21      |
+| updateLiquidationDistributor                                     | 23779           | 26786  | 26786  | 29794  | 2       |
+
+
+| src/lib/AuctionWithBuyoutLoanLiquidator.sol:AuctionWithBuyoutLoanLiquidator contract |                 |       |        |        |         |
+|--------------------------------------------------------------------------------------|-----------------|-------|--------|--------|---------|
+| Deployment Cost                                                                      | Deployment Size |       |        |        |         |
+| 1819738                                                                              | 8308            |       |        |        |         |
+| Function Name                                                                        | min             | avg   | median | max    | # calls |
+| MAX_TIME_FOR_MAIN_LENDER_TO_BUY                                                      | 295             | 295   | 295    | 295    | 1       |
+| addLoanContract                                                                      | 91863           | 91863 | 91863  | 91863  | 5       |
+| getTimeForMainLenderToBuy                                                            | 354             | 1854  | 2354   | 2354   | 4       |
+| owner                                                                                | 551             | 836   | 551    | 2551   | 7       |
+| placeBid                                                                             | 35676           | 35676 | 35676  | 35676  | 1       |
+| setTimeForMainLenderToBuy                                                            | 23793           | 25798 | 23810  | 29792  | 3       |
+| settleWithBuyout                                                                     | 41204           | 91673 | 43998  | 189819 | 3       |
+
+
+| src/lib/LiquidationDistributor.sol:LiquidationDistributor contract |                 |        |        |        |         |
+|--------------------------------------------------------------------|-----------------|--------|--------|--------|---------|
+| Deployment Cost                                                    | Deployment Size |        |        |        |         |
+| 459258                                                             | 1948            |        |        |        |         |
+| Function Name                                                      | min             | avg    | median | max    | # calls |
+| distribute                                                         | 83110           | 133402 | 133402 | 183695 | 2       |
+
+
+| src/lib/UserVault.sol:UserVault contract |                 |        |        |        |         |
+|------------------------------------------|-----------------|--------|--------|--------|---------|
+| Deployment Cost                          | Deployment Size |        |        |        |         |
+| 2238595                                  | 10834           |        |        |        |         |
+| Function Name                            | min             | avg    | median | max    | # calls |
+| ERC20BalanceOf                           | 717             | 717    | 717    | 717    | 2       |
+| ERC721OwnerOf                            | 467             | 467    | 467    | 467    | 3       |
+| ETH                                      | 551             | 551    | 551    | 551    | 2       |
+| OldERC721OwnerOf                         | 1157            | 1157   | 1157   | 1157   | 3       |
+| balanceOf                                | 802             | 802    | 802    | 802    | 2       |
+| burn                                     | 29447           | 48330  | 50086  | 50086  | 12      |
+| burnAndWithdraw                          | 30075           | 80106  | 80106  | 130138 | 2       |
+| depositERC20                             | 24723           | 66454  | 82113  | 82113  | 7       |
+| depositERC721                            | 29692           | 81228  | 89818  | 89818  | 7       |
+| depositERC721s                           | 30242           | 77205  | 77205  | 124169 | 2       |
+| depositEth                               | 23722           | 43731  | 47733  | 47733  | 6       |
+| depositOldERC721                         | 35811           | 65035  | 66509  | 91312  | 4       |
+| depositOldERC721s                        | 126564          | 126564 | 126564 | 126564 | 1       |
+| mint                                     | 72939           | 88817  | 90039  | 90039  | 28      |
+| ownerOf                                  | 797             | 797    | 797    | 797    | 1       |
+| withdrawERC20                            | 24592           | 34504  | 24592  | 54329  | 3       |
+| withdrawERC721                           | 24948           | 34919  | 26064  | 62600  | 4       |
+| withdrawEth                              | 24170           | 27147  | 24170  | 33102  | 3       |
+| withdrawOldERC721                        | 24816           | 38104  | 27049  | 62448  | 3       |
+
+
+| src/lib/callbacks/PurchaseBundler.sol:PurchaseBundler contract |                 |        |        |        |         |
+|----------------------------------------------------------------|-----------------|--------|--------|--------|---------|
+| Deployment Cost                                                | Deployment Size |        |        |        |         |
+| 2147757                                                        | 10255           |        |        |        |         |
+| Function Name                                                  | min             | avg    | median | max    | # calls |
+| afterNFTTransfer                                               | 36473           | 83116  | 91063  | 121814 | 3       |
+| afterPrincipalTransfer                                         | 36808           | 56232  | 36845  | 95045  | 3       |
+| buy                                                            | 99321           | 252475 | 275485 | 310156 | 6       |
+| finalUpdateMultiSourceLoanAddress                              | 25963           | 28041  | 28041  | 30119  | 2       |
+| getMultiSourceLoanAddress                                      | 686             | 686    | 686    | 686    | 2       |
+| owner                                                          | 507             | 507    | 507    | 507    | 3       |
+| sell                                                           | 165684          | 222184 | 202210 | 298660 | 3       |
+| updateMultiSourceLoanAddressFirst                              | 47191           | 47191  | 47191  | 47191  | 2       |
+
+
+| src/lib/loans/LoanManagerRegistry.sol:LoanManagerRegistry contract |                 |       |        |       |         |
+|--------------------------------------------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                                                    | Deployment Size |       |        |       |         |
+| 220697                                                             | 746             |       |        |       |         |
+| Function Name                                                      | min             | avg   | median | max   | # calls |
+| addLoanManager                                                     | 47008           | 47008 | 47008  | 47008 | 6       |
+| isLoanManager                                                      | 471             | 2467  | 2471   | 2471  | 615     |
+
+
+| src/lib/loans/MultiSourceLoan.sol:MultiSourceLoan contract |                 |        |        |        |         |
+|------------------------------------------------------------|-----------------|--------|--------|--------|---------|
+| Deployment Cost                                            | Deployment Size |        |        |        |         |
+| 5675699                                                    | 26427           |        |        |        |         |
+| Function Name                                              | min             | avg    | median | max    | # calls |
+| DOMAIN_SEPARATOR                                           | 422             | 422    | 422    | 422    | 8       |
+| FEE_UPDATE_NOTICE                                          | 872             | 872    | 872    | 872    | 1       |
+| MIN_WAIT_TIME                                              | 3239            | 3239   | 3239   | 3239   | 1       |
+| addNewTranche                                              | 96686           | 143741 | 135239 | 241270 | 763     |
+| addWhitelistedCallbackContract                             | 47998           | 48162  | 48202  | 48214  | 25      |
+| cancelAllOffers                                            | 45554           | 45554  | 45554  | 45554  | 1       |
+| cancelOffer                                                | 46222           | 46222  | 46222  | 46222  | 1       |
+| cancelRenegotiationOffer                                   | 45716           | 45716  | 45716  | 45716  | 1       |
+| delegate                                                   | 197465          | 197465 | 197465 | 197465 | 2       |
+| emitLoan                                                   | 33705           | 192061 | 207031 | 312225 | 149     |
+| executeFlashAction                                         | 36986           | 65430  | 74804  | 84500  | 3       |
+| getCurrencyManager                                         | 563             | 563    | 563    | 563    | 19      |
+| getDelegateRegistry                                        | 1043            | 1043   | 1043   | 1043   | 1       |
+| getFlashActionContract                                     | 647             | 647    | 647    | 647    | 1       |
+| getImprovementMinimum                                      | 2084            | 2084   | 2084   | 2084   | 1       |
+| getLiquidationAuctionDuration                              | 805             | 805    | 805    | 805    | 17      |
+| getLiquidator                                              | 876             | 876    | 876    | 876    | 1       |
+| getLoanHash                                                | 1173            | 1173   | 1173   | 1173   | 2       |
+| getMaxTranches                                             | 410             | 410    | 410    | 410    | 3       |
+| getMinLockPeriod                                           | 1349            | 1349   | 1349   | 1349   | 3       |
+| getMinTranchePrincipal                                     | 390             | 390    | 390    | 390    | 24      |
+| getPendingProtocolFee                                      | 1976            | 1976   | 1976   | 1976   | 2       |
+| getPendingProtocolFeeSetTime                               | 535             | 535    | 535    | 535    | 1       |
+| getProtocolFee                                             | 1580            | 1580   | 1580   | 1580   | 3       |
+| liquidateLoan                                              | 74819           | 143018 | 140960 | 178574 | 24      |
+| mergeTranches                                              | 46437           | 65159  | 65159  | 83882  | 2       |
+| multicall                                                  | 130703          | 250435 | 302794 | 317808 | 3       |
+| owner                                                      | 955             | 1563   | 955    | 2955   | 46      |
+| pendingOwner                                               | 1461            | 1461   | 1461   | 1461   | 1       |
+| refinanceFromLoanExecutionData                             | 163015          | 163015 | 163015 | 163015 | 1       |
+| refinanceFull                                              | 50260           | 379745 | 309131 | 750916 | 33      |
+| refinancePartial                                           | 30633           | 104093 | 124819 | 141859 | 31      |
+| repayLoan                                                  | 31963           | 155213 | 97431  | 389665 | 51      |
+| requestTransferOwner                                       | 23878           | 37921  | 37921  | 51964  | 2       |
+| revokeDelegate                                             | 27975           | 35686  | 35686  | 43398  | 2       |
+| setDelegateRegistry                                        | 29771           | 29771  | 29771  | 29771  | 1       |
+| setFlashActionContract                                     | 30805           | 30949  | 31021  | 31021  | 3       |
+| setMinLockPeriod                                           | 24095           | 41389  | 47152  | 47158  | 4       |
+| setProtocolFee                                             | 23900           | 40362  | 40362  | 56825  | 2       |
+| transferOwnership                                          | 24991           | 30590  | 30295  | 36779  | 4       |
+| updateImprovementMinimum                                   | 24825           | 30291  | 30291  | 35757  | 2       |
+| updateLiquidationContract                                  | 30461           | 30461  | 30461  | 30461  | 6       |
+| updateProtocolFee                                          | 24056           | 49412  | 49412  | 74769  | 2       |
+
+
+| src/lib/pools/AaveUsdcBaseInterestAllocator.sol:AaveUsdcBaseInterestAllocator contract |                 |        |        |        |         |
+|----------------------------------------------------------------------------------------|-----------------|--------|--------|--------|---------|
+| Deployment Cost                                                                        | Deployment Size |        |        |        |         |
+| 716489                                                                                 | 3536            |        |        |        |         |
+| Function Name                                                                          | min             | avg    | median | max    | # calls |
+| getAssetsAllocated                                                                     | 1334            | 1334   | 1334   | 1334   | 1       |
+| getBaseApr                                                                             | 2603            | 2603   | 2603   | 2603   | 1       |
+| getBaseAprWithUpdate                                                                   | 2581            | 2581   | 2581   | 2581   | 1       |
+| reallocate                                                                             | 85548           | 104286 | 104286 | 123024 | 2       |
+| transferAll                                                                            | 99209           | 99209  | 99209  | 99209  | 1       |
+
+
+| src/lib/pools/FeeManager.sol:FeeManager contract |                 |       |        |       |         |
+|--------------------------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                                  | Deployment Size |       |        |       |         |
+| 527973                                           | 1845            |       |        |       |         |
+| Function Name                                    | min             | avg   | median | max   | # calls |
+| PRECISION                                        | 297             | 297   | 297    | 297   | 515     |
+| WAIT_TIME                                        | 209             | 209   | 209    | 209   | 3       |
+| confirmFees                                      | 23889           | 49109 | 42415  | 76603 | 5       |
+| getFees                                          | 896             | 2496  | 896    | 4896  | 5       |
+| getPendingFees                                   | 853             | 853   | 853    | 853   | 1       |
+| getPendingFeesSetTime                            | 491             | 491   | 491    | 491   | 2       |
+| owner                                            | 402             | 1602  | 2402   | 2402  | 5       |
+| processFees                                      | 4723            | 4723  | 4723   | 4723  | 256     |
+| setPendingFees                                   | 23936           | 61790 | 74405  | 74417 | 4       |
+
+
+| src/lib/pools/LidoEthBaseInterestAllocator.sol:LidoEthBaseInterestAllocator contract |                 |        |        |        |         |
+|--------------------------------------------------------------------------------------|-----------------|--------|--------|--------|---------|
+| Deployment Cost                                                                      | Deployment Size |        |        |        |         |
+| 965448                                                                               | 5083            |        |        |        |         |
+| Function Name                                                                        | min             | avg    | median | max    | # calls |
+| getAssetsAllocated                                                                   | 1449            | 5078   | 5949   | 5949   | 62      |
+| getBaseApr                                                                           | 861             | 3080   | 2861   | 5296   | 19      |
+| getBaseAprWithUpdate                                                                 | 23820           | 30604  | 30604  | 37389  | 2       |
+| getLidoData                                                                          | 2425            | 2425   | 2425   | 2425   | 1       |
+| getLidoUpdateTolerance                                                               | 282             | 282    | 282    | 282    | 1       |
+| getMaxSlippage                                                                       | 480             | 480    | 480    | 480    | 1       |
+| getPool                                                                              | 189             | 189    | 189    | 189    | 3       |
+| owner                                                                                | 2479            | 2479   | 2479   | 2479   | 1       |
+| reallocate                                                                           | 22000           | 83542  | 112244 | 116382 | 3       |
+| setMaxSlippage                                                                       | 46750           | 46750  | 46750  | 46750  | 1       |
+| transferAll                                                                          | 114018          | 114018 | 114018 | 114018 | 1       |
+
+
+| src/lib/pools/Pool.sol:Pool contract   |                 |         |         |         |         |
+|----------------------------------------|-----------------|---------|---------|---------|---------|
+| Deployment Cost                        | Deployment Size |         |         |         |         |
+| 7143103                                | 35316           |         |         |         |         |
+| Function Name                          | min             | avg     | median  | max     | # calls |
+| PRINCIPAL_PRECISION                    | 1670            | 1670    | 1670    | 1670    | 16      |
+| UPDATE_WAITING_TIME                    | 746             | 746     | 746     | 746     | 45      |
+| addCallers                             | 151639          | 151639  | 151639  | 151639  | 43      |
+| asset                                  | 613             | 613     | 613     | 613     | 45      |
+| balanceOf                              | 1069            | 1069    | 1069    | 1069    | 1       |
+| confirmBaseInterestAllocator           | 26118           | 75219   | 76772   | 102920  | 47      |
+| confirmUnderwriter                     | 25880           | 29662   | 28020   | 35088   | 3       |
+| deployWithdrawalQueue                  | 34487           | 1363249 | 1477039 | 1547049 | 12      |
+| deposit                                | 24390           | 104745  | 105830  | 131684  | 28      |
+| getAccountingValuesForQueue            | 1397            | 1397    | 1397    | 1397    | 5       |
+| getAvailableToWithdraw                 | 1839            | 1839    | 1839    | 1839    | 6       |
+| getBaseInterestAllocator               | 1005            | 2005    | 2005    | 3005    | 4       |
+| getCollectedFees                       | 1575            | 1575    | 1575    | 1575    | 2       |
+| getDeployedQueue                       | 1594            | 2094    | 1594    | 5594    | 12      |
+| getFeeManager                          | 1713            | 1713    | 1713    | 1713    | 2       |
+| getMinTimeBetweenWithdrawalQueues      | 1494            | 1494    | 1494    | 1494    | 9       |
+| getOptimalIdleRange                    | 1125            | 1125    | 1125    | 1125    | 2       |
+| getOutstandingValues                   | 1839            | 1839    | 1839    | 1839    | 9       |
+| getOutstandingValuesForQueue           | 1436            | 1436    | 1436    | 1436    | 10      |
+| getPendingBaseInterestAllocator        | 1335            | 2335    | 2335    | 3335    | 2       |
+| getPendingBaseInterestAllocatorSetTime | 1333            | 1333    | 1333    | 1333    | 3       |
+| getPendingQueueIndex                   | 937             | 937     | 937     | 937     | 1       |
+| getPendingUnderwriter                  | 1511            | 1511    | 1511    | 1511    | 1       |
+| getPendingUnderwriterSetTime           | 1663            | 1663    | 1663    | 1663    | 1       |
+| getReallocationBonus                   | 2761            | 2761    | 2761    | 2761    | 1       |
+| getTotalReceived                       | 1135            | 1135    | 1135    | 1135    | 9       |
+| getUnderwriter                         | 1555            | 1555    | 1555    | 1555    | 1       |
+| isActive                               | 553             | 1219    | 553     | 2553    | 3       |
+| loanLiquidation                        | 73650           | 89738   | 89738   | 105826  | 2       |
+| loanRepayment                          | 55126           | 92332   | 102282  | 112038  | 6       |
+| mint                                   | 24657           | 65346   | 65346   | 106036  | 2       |
+| owner                                  | 1137            | 1215    | 1137    | 3137    | 51      |
+| pausePool                              | 24433           | 25399   | 25641   | 25641   | 5       |
+| reallocate                             | 209951          | 209954  | 209954  | 209958  | 2       |
+| redeem                                 | 221880          | 221897  | 221887  | 221925  | 11      |
+| requestAddCallers                      | 76817           | 76817   | 76817   | 76817   | 43      |
+| setBaseInterestAllocator               | 23890           | 37963   | 37963   | 52037   | 2       |
+| setOptimalIdleRange                    | 24824           | 28182   | 28182   | 31540   | 2       |
+| setUnderwriter                         | 23862           | 37935   | 37935   | 52009   | 2       |
+| totalAssets                            | 13179           | 28181   | 13186   | 60179   | 5       |
+| totalSupply                            | 519             | 519     | 519     | 519     | 13      |
+| validateOffer                          | 30804           | 103042  | 108746  | 119815  | 18      |
+
+
+| src/lib/pools/PoolOfferHandler.sol:PoolOfferHandler contract |                 |       |        |       |         |
+|--------------------------------------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                                              | Deployment Size |       |        |       |         |
+| 916871                                                       | 4079            |       |        |       |         |
+| Function Name                                                | min             | avg   | median | max   | # calls |
+| NEW_TERMS_WAITING_TIME                                       | 213             | 213   | 213    | 213   | 29      |
+| confirmTerms                                                 | 25447           | 55636 | 56680  | 56692 | 30      |
+| getAprPremium                                                | 654             | 2017  | 2654   | 2654  | 22      |
+| getPendingAprPremium                                         | 676             | 676   | 676    | 676   | 1       |
+| owner                                                        | 362             | 499   | 362    | 2362  | 29      |
+| setTerms                                                     | 25365           | 56275 | 57343  | 57355 | 30      |
+| validateOffer                                                | 2868            | 3558  | 2917   | 4891  | 3       |
+
+
+| src/lib/pools/WithdrawalQueue.sol:WithdrawalQueue contract |                 |        |        |        |         |
+|------------------------------------------------------------|-----------------|--------|--------|--------|---------|
+| Deployment Cost                                            | Deployment Size |        |        |        |         |
+| 1337154                                                    | 6633            |        |        |        |         |
+| Function Name                                              | min             | avg    | median | max    | # calls |
+| getAvailable                                               | 2263            | 5096   | 2263   | 10763  | 3       |
+| getNextTokenId                                             | 721             | 721    | 721    | 721    | 1       |
+| getPool                                                    | 215             | 215    | 215    | 215    | 1       |
+| getShares                                                  | 589             | 589    | 589    | 589    | 1       |
+| getTotalShares                                             | 743             | 2435   | 2743   | 2743   | 13      |
+| getUnlockTime                                              | 721             | 721    | 721    | 721    | 1       |
+| getWithdrawn                                               | 545             | 545    | 545    | 545    | 1       |
+| lockWithdrawals                                            | 26157           | 33998  | 28308  | 47531  | 3       |
+| mint                                                       | 22046           | 107978 | 136622 | 136622 | 4       |
+| withdraw                                                   | 24332           | 52400  | 39696  | 105876 | 4       |
+
+
+| src/lib/validators/NftBitVectorValidator.sol:NftBitVectorValidator contract |                 |     |        |     |         |
+|-----------------------------------------------------------------------------|-----------------|-----|--------|-----|---------|
+| Deployment Cost                                                             | Deployment Size |     |        |     |         |
+| 138975                                                                      | 424             |     |        |     |         |
+| Function Name                                                               | min             | avg | median | max | # calls |
+| validateOffer                                                               | 637             | 652 | 652    | 668 | 2       |
+
+
+| src/lib/validators/NftPackedListValidator.sol:NftPackedListValidator contract |                 |      |        |      |         |
+|-------------------------------------------------------------------------------|-----------------|------|--------|------|---------|
+| Deployment Cost                                                               | Deployment Size |      |        |      |         |
+| 183748                                                                        | 632             |      |        |      |         |
+| Function Name                                                                 | min             | avg  | median | max  | # calls |
+| validateOffer                                                                 | 1627            | 1652 | 1652   | 1677 | 2       |
+
+
+| src/lib/validators/RangeValidator.sol:RangeValidator contract |                 |     |        |     |         |
+|---------------------------------------------------------------|-----------------|-----|--------|-----|---------|
+| Deployment Cost                                               | Deployment Size |     |        |     |         |
+| 113283                                                        | 305             |     |        |     |         |
+| Function Name                                                 | min             | avg | median | max | # calls |
+| validateOffer                                                 | 471             | 498 | 500    | 525 | 3       |
+
+
+| test/pools/Pool.t.sol:PoolTest contract |                 |     |        |     |         |
+|-----------------------------------------|-----------------|-----|--------|-----|---------|
+| Deployment Cost                         | Deployment Size |     |        |     |         |
+| 31857690                                | 150391          |     |        |     |         |
+| Function Name                           | min             | avg | median | max | # calls |
+| getTotalLoansIssued                     | 0               | 0   | 0      | 0   | 11      |
+
+
+| test/utils/MockedAave.sol:MockedAave contract |                 |       |        |       |         |
+|-----------------------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                               | Deployment Size |       |        |       |         |
+| 1110970                                       | 5655            |       |        |       |         |
+| Function Name                                 | min             | avg   | median | max   | # calls |
+| aToken                                        | 369             | 369   | 369    | 369   | 5       |
+| getReserveData                                | 707             | 707   | 707    | 707   | 2       |
+| setAprBps                                     | 43548           | 43548 | 43548  | 43548 | 1       |
+
+
+| test/utils/MockedCurve.sol:MockedCurve contract |                 |       |        |       |         |
+|-------------------------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                                 | Deployment Size |       |        |       |         |
+| 256758                                          | 1004            |       |        |       |         |
+| Function Name                                   | min             | avg   | median | max   | # calls |
+| setNextDy                                       | 26387           | 40641 | 43487  | 43499 | 6       |
+
+
+| test/utils/MockedLido.sol:MockedLido contract |                 |       |        |       |         |
+|-----------------------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                               | Deployment Size |       |        |       |         |
+| 811878                                        | 4379            |       |        |       |         |
+| Function Name                                 | min             | avg   | median | max   | # calls |
+| balanceOf                                     | 626             | 2201  | 2626   | 2626  | 66      |
+| getTotalPooledEther                           | 431             | 2115  | 2431   | 2431  | 57      |
+| getTotalShares                                | 651             | 2533  | 2651   | 2651  | 51      |
+| mint                                          | 68177           | 68177 | 68177  | 68177 | 3       |
+| setTotalPooledEther                           | 26664           | 42997 | 43764  | 43764 | 156     |
+| setTotalShares                                | 26730           | 43716 | 43830  | 43830 | 150     |
+
+
+| test/utils/SampleCollection.sol:SampleCollection contract |                 |       |        |       |         |
+|-----------------------------------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                                           | Deployment Size |       |        |       |         |
+| 809855                                                    | 4031            |       |        |       |         |
+| Function Name                                             | min             | avg   | median | max   | # calls |
+| approve                                                   | 31162           | 47841 | 48262  | 48262 | 244     |
+| mint                                                      | 56271           | 89303 | 90449  | 90665 | 200     |
+| ownerOf                                                   | 560             | 938   | 560    | 2560  | 95      |
+| safeTransferFrom                                          | 56103           | 56106 | 56103  | 56115 | 4       |
+| setApprovalForAll                                         | 46130           | 46139 | 46142  | 46142 | 9       |
+| transferFrom                                              | 54246           | 54246 | 54246  | 54246 | 1       |
+
+
+| test/utils/SampleOldCollection.sol:SampleOldCollection contract |                 |       |        |       |         |
+|-----------------------------------------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                                                 | Deployment Size |       |        |       |         |
+| 834750                                                          | 4146            |       |        |       |         |
+| Function Name                                                   | min             | avg   | median | max   | # calls |
+| approve                                                         | 48262           | 48262 | 48262  | 48262 | 4       |
+| mint                                                            | 56499           | 89444 | 90665  | 90665 | 28      |
+| ownerOf                                                         | 560             | 1760  | 2560   | 2560  | 10      |
+
+
+| test/utils/SampleToken.sol:SampleToken contract |                 |       |        |       |         |
+|-------------------------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                                 | Deployment Size |       |        |       |         |
+| 766683                                          | 4170            |       |        |       |         |
+| Function Name                                   | min             | avg   | median | max   | # calls |
+| allowance                                       | 873             | 1873  | 1873   | 2873  | 2       |
+| approve                                         | 26018           | 38876 | 46254  | 46254 | 1245    |
+| balanceOf                                       | 604             | 1050  | 604    | 2604  | 336     |
+| decimals                                        | 287             | 287   | 287    | 287   | 50      |
+| mint                                            | 28319           | 48215 | 50851  | 68203 | 1268    |
+| transfer                                        | 33936           | 40886 | 40086  | 51036 | 12      |
