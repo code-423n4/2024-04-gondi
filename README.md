@@ -173,8 +173,11 @@ To run Slither (*See [slither.txt](https://github.com/code-423n4/2024-04-gondi/b
 slither .
 ```
 
-✅ SCOUTS: Add a screenshot of your terminal showing the gas report
-✅ SCOUTS: Add a screenshot of your terminal showing the test coverage
+Gas report: See [gas-report.txt](https://github.com/code-423n4/2024-04-gondi/blob/main/gas-report.txt)
+
+Test coverage:
+
+![](https://github.com/code-423n4/2024-04-gondi/assets/47150934/422dfa58-eb67-42cc-a202-15620d79c84f)
 
 ## Miscellaneous
 
