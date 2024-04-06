@@ -1,62 +1,8 @@
-# ✨ So you want to run an audit
-
-This `README.md` contains a set of checklists for our audit collaboration.
-
-Your audit will use two repos:
-- **an _audit_ repo** (this one), which is used for scoping your audit and for providing information to wardens
-- **a _findings_ repo**, where issues are submitted (shared with you after the audit)
-
-Ultimately, when we launch the audit, this repo will be made public and will contain the smart contracts to be reviewed and all the information needed for audit participants. The findings repo will be made public after the audit report is published and your team has mitigated the identified issues.
-
-Some of the checklists in this doc are for **C4 (🐺)** and some of them are for **you as the audit sponsor (⭐️)**.
-
----
-
-# Audit setup
-
-## 🐺 C4: Set up repos
-- [ ] Create a new private repo named `YYYY-MM-sponsorname` using this repo as a template.
-- [ ] Rename this repo to reflect audit date (if applicable)
-- [ ] Rename audit H1 below
-- [ ] Update pot sizes
-  - [ ] Remove the "Bot race findings opt out" section if there's no bot race.
-- [ ] Fill in start and end times in audit bullets below
-- [ ] Add link to submission form in audit details below
-- [ ] Add the information from the scoping form to the "Scoping Details" section at the bottom of this readme.
-- [ ] Add matching info to the Code4rena site
-- [ ] Add sponsor to this private repo with 'maintain' level access.
-- [ ] Send the sponsor contact the url for this repo to follow the instructions below and add contracts here.
-- [ ] Delete this checklist.
-
-# Repo setup
-
-## ⭐️ Sponsor: Add code to this repo
-
-- [ ] Create a PR to this repo with the below changes:
-- [ ] Confirm that this repo is a self-contained repository with working commands that will build (at least) all in-scope contracts, and commands that will run tests producing gas reports for the relevant contracts.
-- [ ] Please have final versions of contracts and documentation added/updated in this repo **no less than 48 business hours prior to audit start time.**
-- [ ] Be prepared for a 🚨code freeze🚨 for the duration of the audit — important because it establishes a level playing field. We want to ensure everyone's looking at the same code, no matter when they look during the audit. (Note: this includes your own repo, since a PR can leak alpha to our wardens!)
-
-## ⭐️ Sponsor: Repo checklist
-
-- [ ] Modify the [Overview](#overview) section of this `README.md` file. Describe how your code is supposed to work with links to any relevent documentation and any other criteria/details that the auditors should keep in mind when reviewing. (Here are two well-constructed examples: [Ajna Protocol](https://github.com/code-423n4/2023-05-ajna) and [Maia DAO Ecosystem](https://github.com/code-423n4/2023-05-maia))
-- [ ] Review the Gas award pool amount, if applicable. This can be adjusted up or down, based on your preference - just flag it for Code4rena staff so we can update the pool totals across all comms channels.
-- [ ] Optional: pre-record a high-level overview of your protocol (not just specific smart contract functions). This saves wardens a lot of time wading through documentation.
-- [ ] [This checklist in Notion](https://code4rena.notion.site/Key-info-for-Code4rena-sponsors-f60764c4c4574bbf8e7a6dbd72cc49b4#0cafa01e6201462e9f78677a39e09746) provides some best practices for Code4rena audit repos.
-
-## ⭐️ Sponsor: Final touches
-- [ ] Review and confirm the pull request created by the Scout (technical reviewer) who was assigned to your contest. *Note: any files not listed as "in scope" will be considered out of scope for the purposes of judging, even if the file will be part of the deployed contracts.*
-- [ ] Check that images and other files used in this README have been uploaded to the repo as a file and then linked in the README using absolute path (e.g. `https://github.com/code-423n4/yourrepo-url/filepath.png`)
-- [ ] Ensure that *all* links and image/file paths in this README use absolute paths, not relative paths
-- [ ] Check that all README information is in markdown format (HTML does not render on Code4rena.com)
-- [ ] Delete this checklist and all text above the line below when you're ready.
-
----
-
 # Gondi Invitational audit details
+
 - Total Prize Pool: $74,600 in USDC
   - HM awards: $45,400 in USDC
-  - Analysis awards: $2,500 USDC 
+  - Analysis awards: $2,500 USDC
   - QA awards: $1,300 in USDC
   - Gas awards: $1,300 in USDC
   - Judge awards: $10,460 in USDC
@@ -77,96 +23,80 @@ This audit repo and its Discord channel are accessible to **certified wardens on
 
 *All discussions regarding private audits should be considered private and confidential, unless otherwise indicated.*
 
-
 ## Automated Findings / Publicly Known Issues
 
 The 4naly3er report can be found [here](https://github.com/code-423n4/2024-04-gondi/blob/main/4naly3er-report.md).
 
+*Note for C4 wardens: Anything included in this `Automated Findings / Publicly Known Issues` section is considered a publicly known issue and is ineligible for awards.*
 
-
-_Note for C4 wardens: Anything included in this `Automated Findings / Publicly Known Issues` section is considered a publicly known issue and is ineligible for awards._
-
-If the owner of the pool or poolunderwriter are compromised, then pools could be drained by setting underwriting terms agains worthless NFTs.
+If the owner of the pool or PoolUnderwriter are compromised, then pools could be drained by setting underwriting terms against worthless NFTs.
 The security of those wallets is in a separate layer (multi-sig / governor contract) and should not be considered.
-
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
 
 # Overview
 
-[ ⭐️ SPONSORS: add info here ]
+Gondi is a decentralized non-custodial NFT lending protocol that offers the most flexible and capital efficient primitive.  
+Gondi loans allows borrowers to access liquidity and obtain the best marginal rate when available as well as allow lenders to earn yield on their capital with the flexibility of entering and exiting their position any moment without affecting borrowers' loans.
+Gondi V3 loan offers are submitted from both protocol pools as well as peers market participants creating deep liquidity as well as precise risk pricing..
 
 ## Links
 
-- **Previous audits:**  
-  - ✅ SCOUTS: If there are multiple report links, please format them in a list.
-- **Documentation:** https://app.gitbook.com/invite/4HJV0LcOOnJ7AVJ77p8e/KW6r5CM24fuLQn0gSSXQ
-- **Website:** 🐺 CA: add a link to the sponsor's website
-- **X/Twitter:** 🐺 CA: add a link to the sponsor's Twitter
-- **Discord:** 🐺 CA: add a link to the sponsor's Discord
-
----
+- **Documentation:** <https://app.gitbook.com/invite/4HJV0LcOOnJ7AVJ77p8e/KW6r5CM24fuLQn0gSSXQ>
+- **Previous audits:** <https://app.gitbook.com/o/4HJV0LcOOnJ7AVJ77p8e/s/W2WSJrV6PSLWo4p8vIGq/security-and-audits>
+- **Website:** <https://www.gondi.xyz/>
+- **X/Twitter:** <https://twitter.com/gondixyz>
+- **Discord:** <https://discord.gg/HJc7zpTT>
 
 # Scope
 
 *See [scope.txt](https://github.com/code-423n4/2024-04-gondi/blob/main/scope.txt)*
 
-[ ✅ SCOUTS: add scoping and technical details here ]
-
 ### Files in scope
-- ✅ This should be completed using the `metrics.md` file
-- ✅ Last row of the table should be Total: SLOC
-- ✅ SCOUTS: Have the sponsor review and and confirm in text the details in the section titled "Scoping Q amp; A"
 
-*For sponsors that don't use the scoping tool: list all files in scope in the table below (along with hyperlinks) -- and feel free to add notes to emphasize areas of focus.*
-
-| Contract | SLOC | Purpose | Libraries used |  
-| ----------- | ----------- | ----------- | ----------- |
-| [contracts/folder/sample.sol](https://github.com/code-423n4/repo-name/blob/contracts/folder/sample.sol) | 123 | This contract does XYZ | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+File                                             | Logic Contracts |  Lines    | nLines   | SLOC     |
+------------------------------------------------ | --------------- |  -------- | -------- | -------- |
+/src/lib/AddressManager.sol                      | 1               |  100      | 100      | 61       |
+/src/lib/AuctionLoanLiquidator.sol               | 1               |  336      | 321      | 241      |
+/src/lib/AuctionWithBuyoutLoanLiquidator.sol     | 1               |  133      | 124      | 93       |
+/src/lib/InputChecker.sol                        | 1               |  15       | 15       | 9        |
+/src/lib/LiquidationDistributor.sol              | 1               |  123      | 111      | 106      |
+/src/lib/LiquidationHandler.sol                  | 1               |  115      | 112      | 77       |
+/src/lib/Multicall.sol                           | 1               |  22       | 22       | 15       |
+/src/lib/UserVault.sol                           | 1               |  376      | 355      | 271      |
+/src/lib/callbacks/CallbackHandler.sol           | 1               |  84       | 75       | 53       |
+/src/lib/callbacks/PurchaseBundler.sol           | 1               |  320      | 308      | 247      |
+/src/lib/loans/BaseLoan.sol                      | 1               |  216      | 216      | 117      |
+/src/lib/loans/BaseLoanHelpers.sol               | 1               |  39       | 23       | 25       |
+/src/lib/loans/LoanManager.sol                   | 1               |  161      | 136      | 105      |
+/src/lib/loans/LoanManagerRegistry.sol           | 1               |  31       | 31       | 20       |
+/src/lib/loans/MultiSourceLoan.sol               | 1               |  1155     | 1058     | 864      |
+/src/lib/loans/WithLoanManagers.sol              | 1               |  29       | 29       | 19       |
+/src/lib/pools/AaveUsdcBaseInterestAllocator.sol | 1               |  105      | 105      | 75       |
+/src/lib/pools/FeeManager.sol                    | 1               |  79       | 79       | 51       |
+/src/lib/pools/LidoEthBaseInterestAllocator.sol  | 1               |  173      | 173      | 134      |
+/src/lib/pools/Pool.sol                          | 1               |  766      | 731      | 507      |
+/src/lib/pools/PoolOfferHandler.sol              | 1               |  170      | 155      | 114      |
+/src/lib/pools/WithdrawalQueue.sol               | 1               |  145      | 145      | 82       |
+/src/lib/utils/BytesLib.sol                      | 1               |  95       | 95       | 50       |
+/src/lib/utils/Hash.sol                          | 1               |  200      | 196      | 169      |
+/src/lib/utils/Interest.sol                      | 1               |  39       | 39       | 30       |
+/src/lib/utils/TwoStepOwned.sol                  | 1               |  48       | 48       | 31       |
+/src/lib/utils/ValidatorHelpers.sol              | 1               |  82       | 79       | 49       |
+/src/lib/utils/WithProtocolFee.sol               | 1               |  86       | 86       | 54       |
+**Totals**                                       | **28**          |  **5243** | **4967** | **3669** |
 
 ### Files out of scope
 
 *See [out_of_scope.txt](https://github.com/code-423n4/2024-04-gondi/blob/main/out_of_scope.txt)*
 
-
-✅ SCOUTS: List files/directories out of scope
-
 ## Scoping Q &amp; A
 
 ### General questions
-### Are there any ERC20's in scope?: Yes
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column with "None".
-
-Specific tokens (please specify)
-USDC / WETH
-
-### Are there any ERC777's in scope?: No
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column with "None".
-
-
-
-### Are there any ERC721's in scope?: Yes
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column with "None".
-
-Any but whitelisted.
-
-### Are there any ERC1155's in scope?: No
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column with "None".
-
-
-
-✅ SCOUTS: Once done populating the table below, please remove all the Q/A data above.
 
 | Question                                | Answer                       |
 | --------------------------------------- | ---------------------------- |
-| ERC20 used by the protocol              |       🖊️             |
-| Test coverage                           | ✅ SCOUTS: Please populate this after running the test coverage command                          |
+| ERC20 used by the protocol              |       USDC / WETH             |
+| Test coverage                           | 77.11%                         |
 | ERC721 used  by the protocol            |            🖊️              |
-| ERC777 used by the protocol             |           🖊️                |
-| ERC1155 used by the protocol            |              🖊️            |
 | Chains the protocol will be deployed on | Ethereum |
 
 ### ERC20 token behaviors in scope
@@ -191,8 +121,7 @@ Any but whitelisted.
 | [High decimals ( > 18)](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#high-decimals)                                                              | No    |
 | [Blocklists](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#tokens-with-blocklists)                                                                | No    |
 
-### External integrations (e.g., Uniswap) behavior in scope:
-
+### External integrations (e.g., Uniswap) behavior in scope
 
 | Question                                                  | Answer |
 | --------------------------------------------------------- | ------ |
@@ -200,78 +129,53 @@ Any but whitelisted.
 | Pausability (e.g. Uniswap pool gets paused)               |  No   |
 | Upgradeability (e.g. Uniswap gets upgraded)               |   No  |
 
-
-### EIP compliance checklist
---
-
-✅ SCOUTS: Please format the response above 👆 using the template below👇
-
-| Question                                | Answer                       |
-| --------------------------------------- | ---------------------------- |
-| src/Token.sol                           | ERC20, ERC721                |
-| src/NFT.sol                             | ERC721                       |
-
-
 # Additional context
 
 ## Main invariants
 
 - While a loan is outstanding, MultiSourceLoan must own the collateral.
 
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
-
 ## Attack ideas (where to focus for bugs)
+
 Security of collateral in MultiSourceLoan.
 Pool accounting and potential exploits.
 
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
-
 ## All trusted roles in the protocol
 
-Owner of Pool (this will be a Governor contract) will update the poolunderwriter/base rate strategy.
-
-✅ SCOUTS: Please format the response above 👆 using the template below👇
+Owner of Pool (this will be a Governor contract) will update the PoolUnderwriter/base rate strategy.
 
 | Role                                | Description                       |
 | --------------------------------------- | ---------------------------- |
-| Owner                          | Has superpowers                |
-| Administrator                             | Can change fees                       |
-
-## Describe any novel or unique curve logic or mathematical models implemented in the contracts:
-
---
-
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
+| Owner of Pool                          | This will be a Governor contract that will update the PoolUnderwriter/base rate strategy.               |
 
 ## Running tests
 
-1. `curl -L https://foundry.paradigm.xyz | bash`
-3. `forge install transmissions11/solmate`
-3. `forge install OpenZeppelin`
-4. `forge test`
-
-✅ SCOUTS: Please format the response above 👆 using the template below👇
-
 ```bash
-git clone https://github.com/code-423n4/2023-08-arbitrum
+git clone --recurse https://github.com/code-423n4/2024-04-gondi
 git submodule update --init --recursive
-cd governance
-foundryup
-make install
-make build
-make sc-election-test
 ```
+
 To run code coverage
+
 ```bash
-make coverage
+forge coverage --ir-minimum
 ```
+
 To run gas benchmarks
+
 ```bash
-make gas
+forge test --gas-report
+```
+
+To run Slither (*See [slither.txt](https://github.com/code-423n4/2024-04-gondi/blob/main/slither.txt)*)
+
+```bash
+slither .
 ```
 
 ✅ SCOUTS: Add a screenshot of your terminal showing the gas report
 ✅ SCOUTS: Add a screenshot of your terminal showing the test coverage
 
 ## Miscellaneous
-Employees of [SPONSOR NAME] and employees' family members are ineligible to participate in this audit.
+
+Employees for this sponsor and employees' family members are ineligible to participate in this audit.
