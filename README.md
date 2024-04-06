@@ -142,8 +142,6 @@ Pool accounting and potential exploits.
 
 ## All trusted roles in the protocol
 
-Owner of Pool (this will be a Governor contract) will update the PoolUnderwriter/base rate strategy.
-
 | Role                                | Description                       |
 | --------------------------------------- | ---------------------------- |
 | Owner of Pool                          | This will be a Governor contract that will update the PoolUnderwriter/base rate strategy.               |
@@ -181,4 +179,4 @@ Test coverage:
 
 ## Miscellaneous
 
-Employees for this sponsor and employees' family members are ineligible to participate in this audit.
+Employees for Gondi and employees' family members are ineligible to participate in this audit.
