@@ -7,7 +7,7 @@
   - Gas awards: $1,300 in USDC
   - Judge awards: $10,460 in USDC
   - Scout awards: $500 in USDC
-  - Mitigation Review: $13,140 in USDC (*Opportunity goes to top 3 certified wardens based on placement in this audit.*)
+  - Mitigation Review: $13,140 in USDC (*Opportunity goes to top 3 backstage wardens based on placement in this audit who RSVP.*)
 - Join [C4 Discord](https://discord.gg/code4rena) to register
 - Submit findings [using the C4 form](https://code4rena.com/contests/2024-04-gondi/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
